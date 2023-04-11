@@ -12,10 +12,10 @@
     @apply 2xl:hidden xl:hidden lg:hidden md:block sm:block block;
   }
   .Light {
-    @apply 2xl:ml-5 2xl:w-[70px] 2xl:mt-6 2xl:text-white 2xl:border 2xl:border-white 2xl:rounded-md 2xl:dark:border-black 2xl:dark:text-black xl:ml-5 xl:w-[70px] xl:mt-6 xl:text-white xl:border xl:border-white xl:rounded-md xl:dark:border-black xl:dark:text-black lg:ml-5 lg:w-[70px] lg:mt-6 lg:text-white lg:border lg:border-white lg:rounded-md lg:dark:border-black lg:dark:text-black md:ml-5 md:w-[70px] md:mt-6 md:text-white md:border md:border-white md:rounded-md md:dark:border-black md:dark:text-black sm:ml-5 sm:w-[70px] sm:mt-6 sm:text-white sm:border sm:border-white sm:rounded-md sm:dark:border-black sm:dark:text-black ml-5 w-[70px] mt-6 text-white border border-white rounded-md dark:border-black dark:text-black;
+    @apply 2xl:w-[60px] 2xl:text-white 2xl:border 2xl:border-white 2xl:rounded-md 2xl:dark:border-black 2xl:dark:text-black xl:w-[60px] xl:text-white xl:border xl:border-white xl:rounded-md xl:dark:border-black xl:dark:text-black lg:w-[60px] lg:text-white lg:border lg:border-white lg:rounded-md lg:dark:border-black lg:dark:text-black md:w-[60px] md:text-white md:border md:border-white md:rounded-md md:dark:border-black md:dark:text-black sm:w-[60px] sm:text-white sm:border sm:border-white sm:rounded-md sm:dark:border-black sm:dark:text-black absolute left-14 w-[60px] mt-8 text-white border border-white rounded-md dark:border-black dark:text-black;
   }
   .logo {
-    @apply 2xl:inline-block 2xl:relative 2xl:ml-1 xl:inline-block xl:relative xl:ml-1 lg:inline-block lg:relative lg:ml-1 md:inline-block md:relative md:mx-auto  sm:inline-block sm:relative sm:mx-auto inline-block relative;
+    @apply 2xl:inline-block 2xl:left-[30%] xl:inline-block xl:left-[25%] lg:inline-block lg:left-[10%] md:inline-block md:left-0  sm:inline-block sm:left-0 inline-block relative left-[5%];
   }
   .svgLogo {
     @apply 2xl:w-[70%] 2xl:mx-0 xl:w-[70%] xl:mx-0 lg:w-[70%] lg:mx-0 md:w-[70%] md:mx-auto sm:w-[70%] sm:mx-auto mx-auto w-[70%]  pt-7;
@@ -30,7 +30,7 @@
     @apply 2xl:inline-block 2xl:dropdown 2xl:dropdown-hover 2xl:dropdown-end 2xl:border-none 2xl:outline-none 2xl:bg-[#15171E] 2xl:dark:bg-[#d94020] 2xl:hover:bg-[#23252B] 2xl:text-white 2xl:w-[150px] 2xl:h-[50px] 2xl:leading-[50px] 2xl:text-[18px] 2xl:font-bold 2xl:text-center 2xl:rounded-md xl:inline-block xl:dropdown xl:dropdown-hover xl:dropdown-end xl:border-none xl:outline-none xl:bg-[#15171E] xl:dark:bg-[#d94020] xl:hover:bg-[#23252B] xl:text-white xl:w-[150px] xl:h-[50px] xl:leading-[50px] xl:text-[18px] xl:font-bold xl:text-center xl:rounded-md lg:inline-block lg:dropdown lg:dropdown-hover lg:dropdown-end lg:border-none lg:outline-none lg:bg-[#15171E] lg:dark:bg-[#d94020] lg:hover:bg-[#23252B] lg:text-white lg:w-[150px] lg:h-[50px] lg:leading-[50px] lg:text-[18px] lg:font-bold lg:text-center lg:rounded-md md:hidden md:dropdown md:dropdown-hover md:dropdown-end md:border-none md:outline-none md:bg-[#15171E] md:dark:bg-[#d94020] md:hover:bg-[#23252B] md:text-white md:w-[150px] md:h-[50px] md:leading-[50px] md:text-[18px] md:font-bold md:text-center md:rounded-md sm:hidden sm:dropdown sm:dropdown-hover sm:dropdown-end sm:border-none sm:outline-none sm:bg-[#15171E] sm:dark:bg-[#d94020] sm:hover:bg-[#23252B] sm:text-white sm:w-[150px] sm:h-[50px] sm:leading-[50px] sm:text-[18px] sm:font-bold sm:text-center sm:rounded-md hidden dropdown dropdown-hover dropdown-end border-none outline-none bg-[#15171E] dark:bg-[#d94020] hover:bg-[#23252B] text-white w-[150px] h-[50px] leading-[50px] text-[18px] font-bold text-center rounded-md;
   }
   span.userMedia {
-    @apply 2xl:hidden xl:hidden lg:hidden md:block sm:block block pr-5 text-[25px] text-white dark:text-black relative left-[92%] bottom-7;
+    @apply 2xl:hidden xl:hidden lg:hidden md:block sm:block block text-[25px] text-white dark:text-black absolute right-0 top-8 w-[50px];
   }
   .accountMedia {
     @apply 2xl:hidden xl:hidden lg:hidden md:inline-block sm:inline-block inline-block;
@@ -51,7 +51,18 @@
     @apply 2xl:w-[40%] 2xl:ml-0 xl:w-[40%] xl:ml-0 lg:w-[40%] lg:ml-0 md:w-[70%] md:mx-auto sm:w-[70%] sm:mx-auto w-[70%] mx-auto; 
   }
   .textSlider{
-    @apply 2xl:inset-x-[15%] xl:inset-x-[15%] lg:inset-x-[15%] md:inset-x-[35%] sm:inset-x-[25%] inset-x-[18%]; 
+    @apply 2xl:bottom-[20%] xl:bottom-[15%] lg:bottom-[12%] bottom-[15%];
+  }
+  .textSlider>img{
+    @apply 2xl:w-[30%] 2xl:ml-[15%] xl:w-[30%] xl:ml-[15%] lg:w-[30%] lg:ml-[15%] w-[50%] ml-[25%]; 
+    
+  }
+  .textSlider>p{
+    @apply 2xl:w-[30%] 2xl:ml-[15%] xl:w-[30%] xl:ml-[15%] lg:w-[30%] lg:ml-[15%] w-[50%] text-center ml-[25%]; 
+    
+  }
+  .textSlider>button{
+    @apply 2xl:ml-[15%] 2xl:w-[30%] xl:ml-[15%] xl:w-[30%] lg:ml-[15%] lg:w-[30%] ml-[25%] w-[50%]; 
     
   }
   .bottomSlider{
@@ -63,11 +74,20 @@
   .smallSearch {
     @apply 2xl:hidden xl:hidden lg:hidden md:block sm:block block;
   }
+  .recommend{
+    @apply 2xl:mx-0 2xl:text-left 2xl:left-[1%] xl:mx-0 xl:text-left xl:left-[1%] lg:mx-0 lg:text-left lg:left-[1%] md:mx-0 md:text-left md:left-[1%] sm:mx-0 sm:text-left sm:left-[1%] mx-auto text-center left-0;
+  }
   .warGames {
-    @apply 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-2;
+    @apply 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-items-center;
   }
   .textDownload {
     @apply 2xl:pl-5 2xl:w-[36%] xl:pl-5 xl:w-[36%] lg:text-center lg:w-[100%] md:text-center md:w-[100%] sm:text-center sm:w-[100%] text-center w-[100%];
+  }
+  .textDownload>h2{
+    @apply 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] text-[25px];
+  }
+  .textDownload>p{
+    @apply 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] text-[15px];
   }
   .logoDownload {
     @apply 2xl:inline-block xl:inline-block lg:hidden md:hidden sm:hidden hidden;
