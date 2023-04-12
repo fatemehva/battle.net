@@ -27,6 +27,11 @@
       .activeRight {
         transform: scale(1, 1) !important;
       }
+      .activeSearch{
+        /* display: block !important; */
+        transform: scale(1, 1) !important;
+
+      }
     </style>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/font.css" />
@@ -631,7 +636,7 @@
     <span class="userMedia fa-light fa-user-circle"></span>
 
     <div
-      class="accountMedia w-[60%] absolute right-0 scale-0 transition-[300ms] z-[99]"
+      class="accountMedia w-[80%] absolute right-0 scale-0 transition-[300ms] z-[99]"
     >
       <ul
         class="p-5 relative bottom-0 shadow bg-[#15171E] dark:bg-[#d94020] rounded-md w-[100%] cursor-pointer"
@@ -1186,12 +1191,12 @@
     </div>
 
     <!--start search-->
-    <!-- <div class="divSearch relative z-10 w-100  h-[55px] bottom-[55px]">
-      <label for="search" class="inline-block absolute left-[2%] leading-[55px] z-20">
+    <div class="divSearch absolute ml-4  h-[55px] top-[90px] scale-0 z-50 rounded-md bg-[#23252b] dark:bg-[#d94020]">
+      <label for="search" class="inline-block relative leading-[55px] z-30 w-[20px]">
         <span class="fa fa-search text-white mr-[-150px]"></span> 
       </label>
-      <input class="w-[80%] h-[55px] leading-[55px] absolute left-[1%] pl-[3%] placeholder:text-white inline-block outline-none bg-[#7d9bf4] border-none caret-white rounded-md  shadow-sm focus:outline-none " placeholder="Search shop" type="search" name="search"/>
-    </div> -->
+      <input class="w-[90%] h-[55px] bottom-[55px] leading-[55px] relative pl-[4%] placeholder:text-white inline-block outline-none bg-[#464851] border-none caret-white z-20 rounded-md  shadow-sm focus:outline-none" placeholder="Search shop" type="search" name="search"/>
+    </div>
 
     <!--end search-->
 
@@ -2153,7 +2158,7 @@
     <!--top-->
     <a
       href="#top"
-      class="border-[1px] border-[#8f8f8f] p-3 px-4 bg-[#23252b] dark:bg-[#c9c9c9] text-white dark:text-black rounded-md right-1 bottom-[5px] fixed z-50 hover:border-[2px] hover:border-[#ffffff]"
+      class="border-[1px] border-[#8f8f8f] p-3 px-4 bg-[#23252b7d] dark:bg-[#c9c9c962] text-white dark:text-black rounded-md right-1 bottom-[5px] fixed z-50 hover:border-[2px] hover:border-[#ffffff]"
       ><span class="fa fa-chevron-up"></span
     ></a>
     <!--top-->
@@ -2169,6 +2174,12 @@
         .querySelector("span.fa-bars")
         .addEventListener("click", function () {
           document.querySelector("div.menuMedia").classList.toggle("active");
+          this.classList.toggle("fa-close");
+        });
+      document
+        .querySelector("span.battleSearch")
+        .addEventListener("click", function () {
+          document.querySelector("div.divSearch").classList.toggle("activeSearch");
           this.classList.toggle("fa-close");
         });
 

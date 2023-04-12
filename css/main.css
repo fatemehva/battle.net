@@ -2869,8 +2869,8 @@ html {
 
 .Light {
   position: absolute;
-  left: 3.5rem;
-  margin-top: 2rem;
+  left: 0.25rem;
+  margin-top: 0.25rem;
   width: 60px;
   border-radius: 0.375rem;
   border-width: 1px;
@@ -2889,6 +2889,8 @@ html {
 
 @media (min-width: 640px) {
   .Light {
+    left: 3.5rem;
+    margin-top: 2rem;
     width: 60px;
     border-radius: 0.375rem;
     border-width: 1px;
@@ -2908,6 +2910,8 @@ html {
 
 @media (min-width: 768px) {
   .Light {
+    left: 3.5rem;
+    margin-top: 2rem;
     width: 60px;
     border-radius: 0.375rem;
     border-width: 1px;
@@ -2927,6 +2931,8 @@ html {
 
 @media (min-width: 1024px) {
   .Light {
+    left: 3.5rem;
+    margin-top: 2rem;
     width: 60px;
     border-radius: 0.375rem;
     border-width: 1px;
@@ -2946,6 +2952,8 @@ html {
 
 @media (min-width: 1280px) {
   .Light {
+    left: 3.5rem;
+    margin-top: 2rem;
     width: 60px;
     border-radius: 0.375rem;
     border-width: 1px;
@@ -2965,6 +2973,8 @@ html {
 
 @media (min-width: 1536px) {
   .Light {
+    left: 3.5rem;
+    margin-top: 2rem;
     width: 60px;
     border-radius: 0.375rem;
     border-width: 1px;
@@ -3026,14 +3036,15 @@ html {
 .svgLogo {
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
-  padding-top: 1.75rem;
+  margin-top: 2rem;
+  width: 50%;
 }
 
 @media (min-width: 640px) {
   .svgLogo {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1.75rem;
     width: 70%;
   }
 }
@@ -3042,14 +3053,15 @@ html {
   .svgLogo {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1.75rem;
     width: 70%;
   }
 }
 
 @media (min-width: 1024px) {
   .svgLogo {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 3.5rem;
+    margin-top: 1.75rem;
     width: 70%;
   }
 }
@@ -3058,7 +3070,8 @@ html {
   .svgLogo {
     margin-left: 0px;
     margin-right: 0px;
-    width: 70%;
+    margin-top: 1.25rem;
+    width: 100%;
   }
 }
 
@@ -3066,7 +3079,8 @@ html {
   .svgLogo {
     margin-left: 0px;
     margin-right: 0px;
-    width: 70%;
+    margin-top: 1.25rem;
+    width: 100%;
   }
 }
 
@@ -4104,6 +4118,81 @@ span.userMedia {
   }
 }
 
+.divSearch {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .divSearch {
+    display: block;
+    width: 650px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .divSearch {
+    display: block;
+    width: 800px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .divSearch {
+    display: block;
+    width: 900px;
+  }
+}
+
+.divSearch>input {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .divSearch>input {
+    left: 22%;
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .divSearch>input {
+    left: 30%;
+    display: block;
+  }
+}
+
+@media (min-width: 1536px) {
+  .divSearch>input {
+    left: 45%;
+    display: block;
+  }
+}
+
+.divSearch>label {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .divSearch>label {
+    left: 23%;
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .divSearch>label {
+    left: 31%;
+    display: block;
+  }
+}
+
+@media (min-width: 1536px) {
+  .divSearch>label {
+    left: 46%;
+    display: block;
+  }
+}
+
 .accountMedia {
   display: inline-block;
 }
@@ -4419,7 +4508,7 @@ span.userMedia {
 }
 
 .bottomSlider {
-  height: 220px;
+  height: 280px;
 }
 
 @media (min-width: 640px) {
@@ -4873,10 +4962,6 @@ span.userMedia {
   left: 1%;
 }
 
-.left-\[2\%\] {
-  left: 2%;
-}
-
 .left-\[3\%\] {
   left: 3%;
 }
@@ -4917,10 +5002,6 @@ span.userMedia {
   top: 90px;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
 .z-20 {
   z-index: 20;
 }
@@ -4931,6 +5012,14 @@ span.userMedia {
 
 .z-\[99\] {
   z-index: 99;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+.z-30 {
+  z-index: 30;
 }
 
 .col-start-1 {
@@ -5016,6 +5105,10 @@ span.userMedia {
 
 .ml-3 {
   margin-left: 0.75rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
 }
 
 .ml-\[30\%\] {
@@ -5170,10 +5263,6 @@ span.userMedia {
   width: 40px;
 }
 
-.w-\[60\%\] {
-  width: 60%;
-}
-
 .w-\[80\%\] {
   width: 80%;
 }
@@ -5188,6 +5277,14 @@ span.userMedia {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[20px\] {
+  width: 20px;
 }
 
 .max-w-sm {
@@ -5359,9 +5456,18 @@ span.userMedia {
   background-color: rgb(35 37 43 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#23252b7d\] {
+  background-color: #23252b7d;
+}
+
 .bg-\[\#23252b\] {
   --tw-bg-opacity: 1;
   background-color: rgb(35 37 43 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#3b69f2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 105 242 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#666666\] {
@@ -5369,9 +5475,9 @@ span.userMedia {
   background-color: rgb(102 102 102 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#7d9bf4\] {
+.bg-\[\#b8c5ec\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(125 155 244 / var(--tw-bg-opacity));
+  background-color: rgb(184 197 236 / var(--tw-bg-opacity));
 }
 
 .bg-\[rgb\(0\2c 116\2c 224\)\] {
@@ -5392,6 +5498,20 @@ span.userMedia {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#23252\] {
+  background-color: #23252;
+}
+
+.bg-\[\#464851\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(70 72 81 / var(--tw-bg-opacity));
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/images\/bgdownload\.webp\'\)\] {
@@ -5508,8 +5628,8 @@ span.userMedia {
   padding-left: 1%;
 }
 
-.pl-\[3\%\] {
-  padding-left: 3%;
+.pl-\[4\%\] {
+  padding-left: 4%;
 }
 
 .pl-\[8\%\] {
@@ -5836,9 +5956,8 @@ span.userMedia {
   background-color: rgb(197 60 33 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-\[\#c9c9c9\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(201 201 201 / var(--tw-bg-opacity));
+.dark .dark\:bg-\[\#c9c9c962\] {
+  background-color: #c9c9c962;
 }
 
 .dark .dark\:bg-\[\#d94020\] {
@@ -5854,6 +5973,28 @@ span.userMedia {
 .dark .dark\:bg-neutral-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(64 64 64 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-\[\] {
+  background-color: ;
+}
+
+.dark .dark\:bg-\[\#\] {
+  background-color: #;
+}
+
+.dark .dark\:bg-\[\#d\] {
+  background-color: #d;
+}
+
+.dark .dark\:bg-\[\#d94\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(221 153 68 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-\[\#d94029\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 64 41 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:text-black {
